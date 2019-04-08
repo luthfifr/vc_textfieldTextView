@@ -32,13 +32,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if username.text == "luthfi" && password.text == "0987654321" {
                 performSegue(withIdentifier: "segueMasuk", sender: self)
             } else {
-                let alert0 = UIAlertController (title: "Warning", message: "Username atau Password salah.", preferredStyle: UIAlertControllerStyle.alert)
-                alert0.addAction(UIAlertAction(title: "Perbaiki", style: UIAlertActionStyle.default,handler: nil))
+                let alert0 = UIAlertController (title: "Warning", message: "Username atau Password salah.", preferredStyle: UIAlertController.Style.alert)
+                alert0.addAction(UIAlertAction(title: "Perbaiki", style: UIAlertAction.Style.default,handler: nil))
                 self.present(alert0, animated: true, completion: nil)
             }
         } else {
-            let alert1 = UIAlertController (title: "Warning", message: "Username atau Password tidak boleh kosong.", preferredStyle: UIAlertControllerStyle.alert)
-            alert1.addAction(UIAlertAction(title: "Perbaiki", style: UIAlertActionStyle.default,handler: nil))
+            let alert1 = UIAlertController (title: "Warning", message: "Username atau Password tidak boleh kosong.", preferredStyle: UIAlertController.Style.alert)
+            alert1.addAction(UIAlertAction(title: "Perbaiki", style: UIAlertAction.Style.default,handler: nil))
             self.present(alert1, animated: true, completion: nil)
         }
     }
